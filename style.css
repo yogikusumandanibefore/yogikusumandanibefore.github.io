@@ -209,7 +209,30 @@ aside img {
   order: 1;
 }
 
+.right-animation {
+  width: 100%;
+  list-style: none;
+}
 
+.right-animation li a {
+  font-weight: bold;
+  align-items: center;
+  display: flex;
+  color: #000;
+  text-decoration: none;  
+}
+
+.right-animation li a:before {
+  content: "";
+  height: 1px;
+  width: 0;
+  margin-right: 5px;
+  transition: 0.3s;
+}
+
+.right-animation li a:hover::before {
+  width: 15px;
+}
 
 /* Feature */
 
